@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int NrPrime(int n)
+{
+   int prime;
+   
+    while(n > 0)
+    {
+        int uc = n % 10;
+        
+        if(uc == 2 or uc == 3 or uc == 5 or uc == 7)
+        {
+            prime ++;
+        }
+        
+        n = n / 10;
+    }
+   
+   return prime;
+}
